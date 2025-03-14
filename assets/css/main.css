@@ -3602,27 +3602,54 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-		transition: transform 1s ease, opacity 1s ease;
+		overflow-x: auto; /* Enables horizontal scrolling */
+		white-space: nowrap; /* Prevents text wrapping */
+		scrollbar-width: none; /* Hides scrollbar for Firefox */
+		-ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
-		overflow: hidden;
-		padding: 0 2rem 0 0;
-		position: relative;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
+		padding: 0 1rem;
+		max-width: 100%;
+		align-items: center;
 	}
-
+	#nav ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	#nav ul li {
+		padding: 0 1rem;
+	}
+	
+	#nav ul li a {
+		text-decoration: none;
+		color: white;
+		font-size: 1rem;
+		padding: 0.5rem 1rem;
+		display: block;
+	}
+	
+	/* Hover Zones */
+	.nav-hover-left,
+	.nav-hover-right {
+		position: absolute;
+		top: 0;
+		width: 10%;
+		height: 100%;
+		z-index: 10;
+	}
+	
+	.nav-hover-left {
+		left: 0;
+	}
+	
+	.nav-hover-right {
+		right: 0;
+	}
 		#nav ul.divided li {
 			border-top-color: #ffffff;
 		}

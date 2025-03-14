@@ -12,7 +12,7 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro baby -->
+				<!-- Intro -->
 					<div id="intro">
 						<h1>This is Renngang <br />
 						</h1>
@@ -43,38 +43,7 @@
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
-					<script>
-						document.addEventListener("DOMContentLoaded", function() {
-							const nav = document.getElementById("nav");
-							const scrollSpeed = 2; // Adjust speed
-							let scrollInterval;
-						
-							function startScrolling(direction) {
-								stopScrolling(); // Clear any existing interval
-								scrollInterval = setInterval(() => {
-									nav.scrollLeft += direction * scrollSpeed;
-								}, 5);
-							}
-						
-							function stopScrolling() {
-								clearInterval(scrollInterval);
-							}
-						
-							// Hover Zones
-							const hoverLeft = document.createElement("div");
-							const hoverRight = document.createElement("div");
-							hoverLeft.classList.add("nav-hover-left");
-							hoverRight.classList.add("nav-hover-right");
-							nav.appendChild(hoverLeft);
-							nav.appendChild(hoverRight);
-						
-							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
-							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
-						
-							hoverLeft.addEventListener("mouseleave", stopScrolling);
-							hoverRight.addEventListener("mouseleave", stopScrolling);
-						});
-						</script>
+
 				<!-- Main -->
 					<div id="main">
 
@@ -175,6 +144,12 @@
 								<div class="pagination">
 									<!--<a href="#" class="previous">Prev</a>-->
 									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
 									<a href="#" class="next">Next</a>
 								</div>
 							</footer>
@@ -190,7 +165,7 @@
 								The mountains</p>
 							</section>
 							<section>
-								<h3>Talk Porsche?</h3>
+								<h3>Phone</h3>
 								<p><a href="#">+47 47692372</a></p>
 							</section>
 							<section>
