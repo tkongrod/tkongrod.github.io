@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Grain Structures</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="images/rgfavv.PNG">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Materials Engineering</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="materials.html">Introduction to Materials</a></li>
+							<li><a href="materials2.html">Chemistry for Materials Engineering</a></li>
+							<li><a href="materials3.html">Crystal Structures in Metals</a></li>
+                            <li><a href="materials4.html">Grain Structures</a></li>
+							<li><a href="index.html">Back to homepage</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+                    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const nav = document.getElementById("nav");
+							const scrollSpeed = 2; // Adjust speed
+							let scrollInterval;
+						
+							function startScrolling(direction) {
+								stopScrolling(); // Clear any existing interval
+								scrollInterval = setInterval(() => {
+									nav.scrollLeft += direction * scrollSpeed;
+								}, 5);
+							}
+						
+							function stopScrolling() {
+								clearInterval(scrollInterval);
+							}
+						
+							// Hover Zones
+							const hoverLeft = document.createElement("div");
+							const hoverRight = document.createElement("div");
+							hoverLeft.classList.add("nav-hover-left");
+							hoverRight.classList.add("nav-hover-right");
+							nav.appendChild(hoverLeft);
+							nav.appendChild(hoverRight);
+						
+							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
+							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
+						
+							hoverLeft.addEventListener("mouseleave", stopScrolling);
+							hoverRight.addEventListener("mouseleave", stopScrolling);
+						});
+						</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Materials Engineering</span>
+									<h1>Grain Structures<br />
+									</h1>
+								</header>
+								<a class="image right"><img src="images/carbon-steel.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+								<p>
+                                    
+                                    If we had a material where the entire structure consisted of a single crystal structure — that is, if the whole material was one large crystal — then we would have what is called a single crystal. In such a case, the crystal structure would be continuous throughout the entire material.
+                                   <p></p> 
+                                    However, this is mostly a theoretical rarity. There are some materials in nature that are single crystals, but it takes very specific conditions for a material to consist of only one crystal.
+                                    <p></p>
+                                    There are, as mentioned, a few such cases. In the image, you can see a substance called pyrite, which is a compound of iron and sulfur. If the entire material were a single crystal, it would appear — on a macroscopic level — like the image, forming similar distinct shapes.
+                                    <p></p>
+                                    But that’s not common, and for most metals, we do not find such single-crystal structures. If we did have such single crystals and measured material properties — for example, strength — the results would vary depending on the direction in which the measurement was taken. In a tensile test, for instance, it would matter whether the material was stretched in a specific direction; we would get one result, but if we measured along the diagonal, we might get something different. This is because the atomic density in a crystal is not the same in all directions.
+                                    <p></p>
+                                    When a material has different properties in different directions, we say it is anisotropic. An isotropic material has the same properties in all directions — meaning there is no variation regardless of how you look at or measure it.
+                                    <p></p>
+                                    But as mentioned, most metals and materials are not single crystals like the one shown here.
+                                    <p></p>
+                                    Instead, they consist of a large number of small crystals with completely random orientations. We call this polycrystalline. Poly means many — so polycrystalline means that the material is made up of many small crystals. In metals, we refer to these small crystals as grains.
+                                    <p></p>
+                                    This has to do with how the metal solidified — something we’ll look at more closely. But most metals that have formed, or that exist in solid form under normal conditions, will consist of a large number of tiny crystals, all with random orientations.
+                                    <p></p>
+                                    It’s natural for this type of structure to form when a melt solidifies. The structure formed by all these small crystals is called a grain structure. Grain structure exists at a scale above the crystal structure. The crystal structure, which we talked about previously, is found inside each individual grain or crystal. But the structure made up of all the crystals together is what we call the grain structure.
+                                    <p></p>
+                                    And in a polycrystalline material — where we have many such small individual crystals or grains — the material will usually exhibit isotropic properties, meaning it has the same properties regardless of the direction in which you measure. This is because all the grains are randomly oriented. When moving from one crystal to the next, their orientations may differ — for example, the atomic rows might run one way in one crystal and a different way in another.
+                                    <p></p>
+                                    Let's take a closer look at how such a grain structure forms.
+                                    <p></p>
+                                    In metals, the atoms are arranged in a three-dimensional pattern called a crystal structure — that is, the pattern formed by atoms within a single crystal.
+                                    <p></p>
+                                    But what we’re focusing on now is the structure formed by many such crystals, which is called a grain structure.
+                                    <p></p>
+                                    "Grain" and "crystal" are essentially two words describing the same thing. A small section of a grain structure might typically look like this:
+                                    <p></p>
+                                    The circles represent atoms arranged in a specific crystal structure. However, in this example, we have three different grains. Even though each grain has the same internal crystal structure, their orientations are different.
+                                    <p></p>
+                                    On the right, you can see a microscopic image of a grain structure.
+                                    <p></p>
+                                    These grains are usually on the scale of micrometers. Within each grain, the atoms are arranged in a specific way — just like in a crystal structure.
+                                    <p></p>
+                                    But how does this structure actually form?
+                                    <p></p>
+                                    Most metals are polycrystalline, meaning they are made up of a large number of individual crystals.
+                                    <p></p>
+                                    These grains form when a metal solidifies. As we cool down a molten metal, it begins to solidify.
+                                    <p></p>
+                                    And as it solidifies, these grains begin to grow...
+                                    <a class="image left"><img src="images/carbon-steel3.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <p></p>
+                                    We roughly divide grain structures into three different types:
+                                    <li>Equiaxed structure – uniform in all directions</li>
+                                    <li>Columnar structure</li>
+                                    <li>Dendritic structure</li>
+                                    An equiaxed structure forms when cooling is slow.
+                                    This is the structure that is generally most desirable to achieve.
+                                    <p></p>
+                                    Columnar grains form in a cold mold, where the metal that comes into contact with the edges of the mold cools more rapidly.
+                                    One potential issue is that in molds with sharp corners, cracks may develop.
+                                    <p></p>
+                                    Dendritic grain structure:
+                                    Branched crystals can form during rapid cooling of the melt, or under other specific conditions.
+                                    Local undercooling of the melt causes the crystals to grow faster in certain directions.
+                                    This results in branched crystals, known as a dendritic structure.
+                                    If there are irregularities in the melt, these are typically the spots where grains begin to form.
+                                    We can add nucleating agents to promote a more uniform grain structure throughout the melt.
+                                    The type of grain structure that forms also depends on the type of metal alloy being used.
+                                    <p></p>
+                                    <h6>Imperfections</h6>
+                                    Now let’s take a look at imperfections in metals:
+                                    <p></p>
+                                    These can include impurities, defects, or anything else that prevents the material from having one large, perfect crystal structure.
+                                   <p></p>
+                                    The different types of defects commonly found in metals include:
+                                    <li>Foreign atoms: These are atoms of a different element than the host metal. When these are present in the crystal, we refer to it as a substitutional solid solution.</li>
+                                    <li>Vacancies: These are empty sites in the crystal structure — places where an atom is missing.</li>
+                                    <li>Interstitial atoms: These are atoms that have positioned themselves between the regular atoms in the lattice.</li>
+                                    <p></p>
+                                    These three types are what we call point defects — they can be described as localized disruptions at single points in the crystal structure.
+
+                                    If a metal is completely pure, all the atoms will be of the same type.
+                                    But in all types of metal alloys — that is, mixtures of two or more metals — we will find two different types of atoms within the crystals.
+                                    A metal alloy always consists of a base metal (the metal that makes up the largest portion) and an alloying element (the metal added in smaller amounts).
+                                    In the molten state, most metals are soluble in each other. However, not all metals remain soluble when they solidify.
+                                    <p></p>
+                                    This can happen in two ways:
+                                    <li>The atoms of the alloying element replace some of the base metal atoms in the crystal lattice. This is called a substitutional solid solution.</li>
+                                    <li>Or the alloying atoms position themselves between the base metal atoms. This is known as an interstitial solid solution.</li>
+                                    <p></p>
+                                    In other words, the atomic radius of the foreign atom must not be larger than 0.155 times the atomic radius of the base metal atoms in order to fit into the space between them.
+                                    The radius can only be about 15.5% of the base atom's radius for it to fit in the interstitial space.
+                                    <a class="image fit"><img src="images/grainstructure Trym Kongrød.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    When working with metal alloys, it's possible to calculate the percentage composition of the metals — in other words, how much of each metal is present in the alloy.
+                                    You can express the composition in one of two ways:
+                                    <p></p>
+                                    1.	Weight percent (wt%) – This shows how much of the total mass is made up of each metal.
+                                    It's a straightforward percentage calculation:
+                                    If you know the atomic masses, you take the mass of one metal, divide it by the total mass of the alloy, and multiply by 100 to get the weight percent.
+                                    <p></p>
+                                    2.	Atomic percent (at%) – This reflects the ratio of atoms of each element, rather than mass.
+                                    Instead of using mass in grams, you calculate the number of moles of each metal.
+                                    To find the number of moles, divide the mass of each metal by its molar mass (which you can find in the periodic table).
+                                    A simple way to check if your calculations are correct is to verify that the total adds up to 100%, since you're working with percentages
+                                    <a class="image fit"><img src="images/grain structure porsche 911 trym.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    Let’s look at a concrete example of how to calculate atomic percent.
+                                    <p></p>
+                                    Suppose we know the weight percent (wt%) of the metals in an alloy.
+                                    <a class="image right"><img src="images/al-cu trym kongrød.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    An alloy contains 97 wt% aluminum and 3 wt% copper (Cu).
+                                    We want to find the composition in atomic percent.
+                                    <p></p>
+                                    The formula shown (in the original reference) indicates the following:
+                                    <li>c₁ and c₂ represent the weight percent of the two metals.</li>
+                                    <li>a₁ and a₂ represent the atomic masses (or molar masses) of the two metals.</li>
+                                    <p></p>
+                                    Let’s define aluminum as metal 1, and copper as metal 2.
+                                    Using the formula, we calculate the atomic percent of aluminum to be 98.7%.
+                                    <a class="image fit"><img src="images/alcu ganger.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    Since the total must be 100%, we simply subtract to get the atomic percent of copper:
+                                    Atomic percent of copper = 100% – 98.7% = 1.3%
+                                    So, in this alloy, 97% of the total mass is aluminum, but 98.7% of the atoms are aluminum atoms.
+                                    This happens because aluminum has a lower atomic mass, so more aluminum atoms are needed to make up the same mass compared to copper. Therefore, the atomic percent of aluminum is higher than its weight percent.
+                                    <p></p>
+                                    Vacancies are always present to some extent in the structure of a metal.
+                                    A vacancy is a site where an atom is missing from the crystal lattice.
+                                    The number of such vacancies varies with the temperature of the metal.
+									</p>
+                                   
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Norway<br />
+								The mountains</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">tkongrod@hotmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Trym Kongrød</li><li></a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -25,15 +25,45 @@
 							<li><a href="materials.html">Introduction to Materials</a></li>
 							<li><a href="materials2.html">Chemistry for Materials Engineering</a></li>
 							<li><a href="materials3.html">Crystal Structures in Metals</a></li>
+                            <li><a href="materials4.html">Grain Structures</a></li>
 							<li><a href="index.html">Back to homepage</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
+                    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const nav = document.getElementById("nav");
+							const scrollSpeed = 2; // Adjust speed
+							let scrollInterval;
+						
+							function startScrolling(direction) {
+								stopScrolling(); // Clear any existing interval
+								scrollInterval = setInterval(() => {
+									nav.scrollLeft += direction * scrollSpeed;
+								}, 5);
+							}
+						
+							function stopScrolling() {
+								clearInterval(scrollInterval);
+							}
+						
+							// Hover Zones
+							const hoverLeft = document.createElement("div");
+							const hoverRight = document.createElement("div");
+							hoverLeft.classList.add("nav-hover-left");
+							hoverRight.classList.add("nav-hover-right");
+							nav.appendChild(hoverLeft);
+							nav.appendChild(hoverRight);
+						
+							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
+							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
+						
+							hoverLeft.addEventListener("mouseleave", stopScrolling);
+							hoverRight.addEventListener("mouseleave", stopScrolling);
+						});
+						</script>
 
 				<!-- Main -->
 					<div id="main">
@@ -44,7 +74,7 @@
 									<span class="date">Materials Engineering</span>
 									<h1>Crystal Structures in Metals</h1>
 								</header>
-								<div class="image main"><img src="images/crystals1.png" alt="" /></div>
+								<div class="image right"><img src="images/crystals1.png" alt="" /></div>
 								<p>Understanding Crystal Structures in Metals
                                     Why is Crystal Structure Important in Metals?
                                     Metals are not just a collection of atoms randomly arranged—they have a well-defined crystal structure that determines their mechanical, electrical, and thermal properties.
@@ -53,7 +83,7 @@
                                     <li>Ductility and malleability (how easily a metal deforms)</li>
                                     <li>Conductivity (electrical and thermal behavior)</li>
 									</p>
-                                <div class="image main"><img src="images/crystals.png" alt="" /></div>
+                                <div class="image left"><img src="images/crystals.png" alt="" /></div>
                                 <p><h3>What is a Unit Cell in Crystal Structures?</h3>
                                     A unit cell is the smallest repeating unit that can fully describe the structure of a crystal lattice.
                                     In a crystalline material, atoms are arranged in a specific, repeating pattern with fixed distances between them. Instead of analyzing the entire crystal, we can focus on a small representative section that, when repeated in three-dimensional space, reconstructs the entire crystal structure.
@@ -63,7 +93,7 @@
                                     used in crystallography to understand bonding, density, and mechanical behavior.
                                     Understanding unit cells is essential for studying the mechanical and electrical properties of metals, ceramics, and other crystalline materials.
                                 </p>
-                                <div class="image main"><img src="images/fcc.png" alt="" /></div>
+                                <div class="image right"><img src="images/fcc.png" alt="" /></div>
                                 <p><h3>Metallic Crystal Structures and Atomic Arrangement</h3>
                                     In metals, atoms arrange themselves in a three-dimensional pattern, but unlike other crystalline materials, they have free-moving electrons surrounding them.
                                     This means that the metallic bonds are not directional, allowing atoms to shift and pack together in different ways.
@@ -79,7 +109,7 @@
                                     Different metals have different atomic packing structures, influencing their mechanical and electrical behavior.
                                     Understanding these structures is essential in metallurgy and materials science, helping engineers design stronger and more efficient metal alloys.
                                 </p>
-                                <div class="image main"><img src="images/alignment.png" alt="" /></div>
+                                <div class="image left"><img src="images/alignment.png" alt="" /></div>
                                 <p><h3>Cubic Unit Cells in Metals</h3>
                                 Why Do Most Metals Form Cubic Unit Cells?
                                 In most cases, metals crystallize into cubic unit cells because this structure allows for efficient atomic packing while maintaining mechanical stability.
@@ -282,7 +312,7 @@ Materials:
 
 
                                 </p>
-							</section>
+							</section> 
 					</div>
 
 				<!-- Footer -->
@@ -292,10 +322,6 @@ Materials:
 								<h3>Address</h3>
 								<p>Norway<br />
 								The mountains</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+47 47692372</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>

@@ -25,6 +25,7 @@
 							<li><a href="materials.html">Introduction to Materials</a></li>
 							<li><a href="materials2.html">Chemistry for Materials Engineering</a></li>
 							<li><a href="materials3.html">Crystal Structures in Metals</a></li>
+                            <li><a href="materials4.html">Grain Structures</a></li>
 							<li><a href="index.html">Back to homepage</a></li>
 						</ul>
 						<ul class="icons">
@@ -34,6 +35,38 @@
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
+                    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const nav = document.getElementById("nav");
+							const scrollSpeed = 2; // Adjust speed
+							let scrollInterval;
+						
+							function startScrolling(direction) {
+								stopScrolling(); // Clear any existing interval
+								scrollInterval = setInterval(() => {
+									nav.scrollLeft += direction * scrollSpeed;
+								}, 5);
+							}
+						
+							function stopScrolling() {
+								clearInterval(scrollInterval);
+							}
+						
+							// Hover Zones
+							const hoverLeft = document.createElement("div");
+							const hoverRight = document.createElement("div");
+							hoverLeft.classList.add("nav-hover-left");
+							hoverRight.classList.add("nav-hover-right");
+							nav.appendChild(hoverLeft);
+							nav.appendChild(hoverRight);
+						
+							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
+							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
+						
+							hoverLeft.addEventListener("mouseleave", stopScrolling);
+							hoverRight.addEventListener("mouseleave", stopScrolling);
+						});
+						</script>
 
 				<!-- Main -->
 					<div id="main">
@@ -46,7 +79,7 @@
 									</h1>
 									<p>What is an atom?</p>
 								</header>
-								<div class="image main"><img src="images/lithium-2784853-1920.png"  alt="" /></div>
+								<div class="image right"><img src="images/lithium-2784853-1920.png"  alt="" /></div>
 								<p>
                                     In this section, we will go through some fundamental chemistry concepts.
                                     This forms the foundation for material theory and helps explain why materials have the properties they do. To understand this, we first need to grasp some basic chemistry. We will start at the smallest scale—atoms—and gradually build up our understanding, exploring how everything is connected. We will examine how atoms bond together and how this ultimately influences the properties of a material.
@@ -91,7 +124,7 @@
                                         Each of these elements is organized within the periodic table of elements.
                                         </p>
                                 <div class="image main"><img src="images/Skjermbilde 2025-03-18 125344.png"  alt="Renngang, Periodic Table" /></div>
-                                <div class="image main"><img src="images/hydrogen.png"  alt="Renngang, Periodic Table" /></div>
+                                <div class="image left"><img src="images/hydrogen.png"  alt="Renngang, Periodic Table" /></div>
                                <h4>Understanding an Element's Representation in the Periodic Table</h4> 
                                    <p>Let’s take a closer look at how elements are represented in the periodic table, using hydrogen (H) as an example.
                                     In the periodic table, the element hydrogen is labeled with the number 1.
@@ -212,7 +245,7 @@
                                     <br>
                                     The types of elements involved and their valence electrons determine which type of chemical bonding occurs.
                                     In the next section, we will explore how atoms bond together to form these compounds.
-                                    <div class="image main"><img src="images/fluorine2.jpg"  alt="Renngang, Periodic Table" /></div>
+                                    <div class="image right"><img src="images/fluorine2.jpg"  alt="Renngang, Periodic Table" /></div>
                                     <h4>Electronegativity and Chemical Bonding</h4>
                                     The character of a chemical bond is determined by the difference in electronegativity between two atoms.
                                     Fluorine (F), for example, has a very high electronegativity, meaning it has a strong ability to attract electrons when forming a chemical bond.
@@ -234,7 +267,8 @@
                                     This large difference determines what type of chemical bond will form between them.
                                     Ionic Bonding: Sodium Chloride (NaCl)
                                     Ionic bonding occurs when one atom fully transfers an electron to another.
-                                    <div class="image main"><img src="images/sodium+chlorine.jpg"  alt="Renngang, Periodic Table" /></div>
+                                    <p></p>
+                                    <div class="image left"><img src="images/sodium+chlorine.jpg"  alt="Renngang, Periodic Table" /></div>
                                     <h5>Electron Transfer in NaCl Formation</h5>
                                     <li>Sodium (Na) is in Group 1 (far left in the periodic table).It has one valence electron in its outermost shell.</li> 
                                         
@@ -361,7 +395,8 @@ Bonding energy is crucial in materials science because it helps explain:
 <li>Melting & Boiling Points – High bonding energy leads to high melting points.</li>
 <li>Chemical Reactivity – Weakly bonded atoms react more easily.</li>
 By understanding bonding energy, we gain deeper insights into how materials behave under stress, heat, and external forces.
-<div class="image main"><img src="images/emodule.png"  alt="Renngang, Periodic Table" /></div>
+<p></p>
+<div class="image right"><img src="images/emodule.png"  alt="Renngang, Periodic Table" /></div>
 <h3>Elastic Modulus (E-Modulus) and Atomic Bonding</h3>
 What is the Elastic Modulus (E-Modulus)?
 The elastic modulus (E-modulus) of a material describes how much it stretches or compresses when subjected to an applied force (F).
@@ -433,10 +468,6 @@ Understanding the mole is a cornerstone of quantitative chemistry, enabling prec
 								<h3>Address</h3>
 								<p>Norway<br />
 								The mountains</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+47 47692372</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
