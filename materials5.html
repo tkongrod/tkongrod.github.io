@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Metallographic Microscopy</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="images/rgfavv.PNG">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Materials Engineering</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="materials.html">Introduction to Materials</a></li>
+							<li><a href="materials2.html">Chemistry for Materials Engineering</a></li>
+							<li><a href="materials3.html">Crystal Structures in Metals</a></li>
+                            <li><a href="materials4.html">Grain Structures</a></li>
+                            <li><a href="materials5.html">Metallographic Microscopy</a></li>
+                            <li><a href="materials6.html">Diffusion</a></li>
+                            <li><a href="materials7.html">Mechanical Behavior of Metals</a></li>
+							<li><a href="index.html">Back to homepage</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+                    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const nav = document.getElementById("nav");
+							const scrollSpeed = 2; // Adjust speed
+							let scrollInterval;
+						
+							function startScrolling(direction) {
+								stopScrolling(); // Clear any existing interval
+								scrollInterval = setInterval(() => {
+									nav.scrollLeft += direction * scrollSpeed;
+								}, 5);
+							}
+						
+							function stopScrolling() {
+								clearInterval(scrollInterval);
+							}
+						
+							// Hover Zones
+							const hoverLeft = document.createElement("div");
+							const hoverRight = document.createElement("div");
+							hoverLeft.classList.add("nav-hover-left");
+							hoverRight.classList.add("nav-hover-right");
+							nav.appendChild(hoverLeft);
+							nav.appendChild(hoverRight);
+						
+							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
+							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
+						
+							hoverLeft.addEventListener("mouseleave", stopScrolling);
+							hoverRight.addEventListener("mouseleave", stopScrolling);
+						});
+						</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Materials Engineering</span>
+									<h1>Metallographic Microscopy<br />
+									</h1>
+								</header>
+								<a class="image left"><img src="images/mikroskop6.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+								<p>
+                                        <h4>Preparation of the Material Sample</h4>
+                                        To gain a clear view of the material structure in the sample we want to examine, the material must be prepared for metallographic microscopy. 
+                                        The general process involves:
+
+                                        <li>A small test piece is cut from the material sample. It's important to keep the sample as cool as possible during cutting to avoid altering its properties. The sample is then placed in ultrasonic cleaning, where alcohol and ultrasonic waves are used to remove grease and debris.</li>
+
+                                        <li>Next, the sample is mounted using resin. It’s a good idea to apply a small amount of grease inside the mounting cup so that the hardened resin can later be removed easily.</li>
+
+                                        <li>Under intense blue light, the resin polymerizes within half an hour.</li>
+
+                                        <li>Once the resin with the embedded sample is removed from the light-curing machine, it is polished to prepare it for microscopic examination. This is done using a series of abrasive papers and chemical agents.</li>
+
+                                        <li>When the sample is sufficiently smooth and transparent, it is ready for examination under the microscope.</li>
+
+                                        <h4>Examination and Microscopes</h4>
+                                            We mainly use two types of microscopes: the light microscope and the electron microscope.
+                                            <p></p>
+
+                                        <h5>Light Microscope</h5>
+                                        <a class="image right"><img src="images/mikroskop1.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        A metallographic light microscope is designed so that light shines onto the surface of a metal sample and reflects back into the microscope, allowing us to see what's there.
+                                        When light hits the surface, it scatters in different directions depending on the texture, revealing patterns, edges, and contrasts in brightness — some areas appear lighter, others darker.
+
+                                        If the light strikes the metal surface at an angle, it creates small shadows, helping us see variations in surface height.
+                                        The diagram shows how the light (red dotted line) travels through the microscope.
+
+                                        Light behaves like a wave, similar to ripples on water. A light microscope can magnify an image 1,000 to 1,500 times, but no more than that.
+                                        <p></p>
+
+                                        <h5>Electron Microscope</h5>
+                                        <a class="image left"><img src="images/mikroskop2.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        An electron microscope uses electrons instead of light to create an image.
+                                        Electrons are tiny particles in atoms that can also behave like waves, but their wavelength depends on their speed.
+                                        
+                                        There are two main types of electron microscopes used for studying metals: TEM and SEM.
+                                        <p></p>
+                                        <h5>TEM (Transmission Electron Microscope):</h5>
+                                        In this method, electron beams pass through the sample. Therefore, the sample must be extremely thin — comparable to a human hair sliced a thousand times thinner.
+                                        It's also possible to make a plastic replica of the metal surface and observe that under the microscope. There are several methods for creating such replicas.
+                                        <p></p>
+                                        <h5>SEM (Scanning Electron Microscope):</h5>
+                                        A narrow electron beam scans across the surface of the sample, similar to how an image is drawn on a TV screen.
+                                        Where the beam hits the surface, secondary electrons are emitted. These are collected and counted to map out the surface topography.
+                                        This produces a detailed image of the sample surface on a screen.
+                                        <br>
+                                        <p></p>
+                                        <a class="image right"><img src="images/mikroskop8.png.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                       <h4>Microscopy and Microstructure Analysis</h4> 
+                                       
+                                        Microscopy investigations provide valuable insight into the microstructure of materials and how processing history influences their mechanical properties.
+
+                                        To determine the average grain size in a material, we divide the length of a reference line by the number of grains it intersects:
+                                        <p></p>
+                                        <a class="image left"><img src="images/mikroskop7.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        <p></p>
+                                        Vertical line: 222 µm / 4 = 55.5 µm <br>
+                                        
+                                        Horizontal line: 296 µm / 5 = 59.2 µm
+                                        
+                                        <p></p>
+                                        <br>
+                                        <br>
+                                        
+                                        <a class="image right"><img src="images/mikroskop9.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        <h5>Al-Mg-Si alloy</h5>
+                                        This sample, in contrast, exhibits a much finer grain structure.
+                                        
+                                        In the cold-deformed Al-Mg-Si alloy, we observe impurities arranged in parallel lines, which is typical of plastic deformation. This indicates that the material has undergone significant shape change without heat treatment, which increases strength but reduces ductility.
+                                        <p></p>
+                                        <br>
+                                        <br>
+                                        <h4>Carbon Steel Sample, Strenght Tested</h4>
+                                        The carbon steel sample, which has been subjected to tensile stress until failure, displays a crater-shaped fracture surface. This is characteristic of a ductile fracture, where the material experiences substantial plastic deformation before breaking. On the microscopic level, the process begins with the formation of small voids (microvoids) at weak points in the material, often near inclusions, slag particles, or other irregularities. As tensile stress increases, these voids grow and begin to coalesce, eventually forming a continuous crack that leads to failure.
+                                        <br>
+                                        <p></p>
+                                        <a class="image left"><img src="images/mikroskop4.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        <a class="image left"><img src="images/mikroskop3.jpg" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <p></p>
+                                        <p></p>
+                                        Microscopically, this appears as a surface with numerous small dimples, reflecting where the microvoids formed and ruptured. This type of fracture indicates that the material has high strain capacity and a strong ability to resist crack propagation over time.
+                                        <p></p>
+                                        <h4>Fine-Grained and Corse-Grained</h4>
+                                        The difference between fine-grained and coarse-grained structures in the remaining metal samples clearly illustrates how cooling rate and heat treatment influence grain growth:
+                                        A fine-grained structure, as observed in the brass sample, results in higher strength, while coarse-grained materials exhibit lower strength but greater toughness.
+
+                                        These observations confirm the close relationship between microstructure and material properties, showing how the mechanical performance of metals can be tailored through process control.
+                                        <p></p>
+                                        <h5>Final words</h5>
+                                        Through these microscopy investigations, we gain a deeper understanding of how the microstructure of metals relates to manufacturing methods and mechanical behavior.
+
+                                        We observe clear differences between fine- and coarse-grained structures, as well as how deformation and heat treatment affect the internal structure of materials.
+
+                                        Fracture surfaces and impurities provide insight into potential weaknesses, which may have a significant impact on the reliability of materials in service.
+								</p>
+                                   
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Norway<br />
+								The mountains</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">tkongrod@hotmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Trym Kongrød</li><li></a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

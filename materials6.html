@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Diffusion</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="images/rgfavv.PNG">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Materials Engineering</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="materials.html">Introduction to Materials</a></li>
+							<li><a href="materials2.html">Chemistry for Materials Engineering</a></li>
+							<li><a href="materials3.html">Crystal Structures in Metals</a></li>
+                            <li><a href="materials4.html">Grain Structures</a></li>
+                            <li><a href="materials5.html">Metallographic Microscopy</a></li>
+                            <li><a href="materials6.html">Diffusion</a></li>
+                            <li><a href="materials7.html">Mechanical Behavior of Metals</a></li>
+							<li><a href="index.html">Back to homepage</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+                    <script>
+						document.addEventListener("DOMContentLoaded", function() {
+							const nav = document.getElementById("nav");
+							const scrollSpeed = 2; // Adjust speed
+							let scrollInterval;
+						
+							function startScrolling(direction) {
+								stopScrolling(); // Clear any existing interval
+								scrollInterval = setInterval(() => {
+									nav.scrollLeft += direction * scrollSpeed;
+								}, 5);
+							}
+						
+							function stopScrolling() {
+								clearInterval(scrollInterval);
+							}
+						
+							// Hover Zones
+							const hoverLeft = document.createElement("div");
+							const hoverRight = document.createElement("div");
+							hoverLeft.classList.add("nav-hover-left");
+							hoverRight.classList.add("nav-hover-right");
+							nav.appendChild(hoverLeft);
+							nav.appendChild(hoverRight);
+						
+							hoverLeft.addEventListener("mouseenter", () => startScrolling(-1)); // Scroll Left
+							hoverRight.addEventListener("mouseenter", () => startScrolling(1)); // Scroll Right
+						
+							hoverLeft.addEventListener("mouseleave", stopScrolling);
+							hoverRight.addEventListener("mouseleave", stopScrolling);
+						});
+						</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Materials Engineering</span>
+									<h1>Diffusion<br />
+									</h1>
+								</header>
+								<a class="image right"><img src="images/Difusion1.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+								<p>
+                                    <h4>What is diffusion, and what affects it?</h4>
+                                    This image shows a glass of water with red juice added to it.
+                                    Why doesn’t all the juice stay concentrated like in the picture on the left?
+                                    Why does it spread out, as shown in the picture on the right?
+                                    <p></p>
+                                    
+                                    The answer is diffusion.
+                                    Diffusion is the movement of particles from an area of high concentration to an area of low concentration, until the concentration becomes even throughout the space.
+                                    In this case, the juice molecules spread out in the water because there is a higher concentration of juice where it was poured in, and the molecules naturally move to areas with lower concentration, causing the color to distribute evenly over time.
+                                    <a class="image left"><img src="images/Difusion2.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <p></p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Factors that affect diffusion:
+                                    <li>Temperature – Higher temperature increases the energy of the molecules, causing them to move and diffuse faster.</li>
+                                    <li>Particle size – Smaller particles diffuse more easily and quickly than larger ones.</li>
+                                    <li>Concentration difference – The greater the difference between high and low concentration, the faster the diffusion happens.</li>
+                                    <li>Medium – Diffusion happens more quickly in gases than in liquids, and more slowly in solids.</li>
+                                    <li>Distance – The shorter the distance the molecules need to travel, the faster diffusion occurs.</li>
+                                    <p></p>
+
+
+                                    <h5>Motions of atoms</h5>
+                                    Diffusion can be thought of as a general term for the movement of atoms or particles within a material or substance.
+                                    It is essentially the atoms' own motion through a material.
+                                    This process occurs in all types of materials — whether they are solids, liquids, or gases.
+                                    However, diffusion happens faster in liquids and gases than in solids.
+                                    <p></p>
+                                    <a class="image right"><img src="images/Difusion3.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <h4>Diffusion in Metals</h4>
+                                    Diffusion in metals occurs as illustrated in the image.
+                                    <p></p>
+                                    Vacancy diffusion is one of the most common diffusion mechanisms in metals.
+                                    In this process, atoms move by “jumping” into vacant lattice sites (vacancies), leaving behind a vacancy at their original position.
+                                    <p></p>
+                                    The quantity that describes how much or how many atoms pass through a given surface per unit of time due to diffusion is called the diffusion flux.
+                                    <p></p>
+                                    <a class="image left"><img src="images/diffusjonformel1.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <br>
+                                    It is denoted by J, and is defined as: <br>
+                                    J = mass / (area × time)
+                                    <p></p>
+                                    <br>
+                                    <br>
+                                    <a class="image left"><img src="images/diffusjonformel3.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <br>
+                                    We reach what is called steady state when the concentration gradient levels out — that is, when dc/dx approaches 0.
+                                    <p></p>
+                                    <br>
+                                    <br>
+                                    
+                                    <a class="image left"><img src="images/diffusjonformel2.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    In a molten state, the atoms are arranged in a completely disordered manner.
+                                    But as the melt solidifies, the atoms begin to rearrange themselves into a crystalline structure.
+                                    The diffusion coefficient is a temperature-dependent quantity.
+                                    <p></p>
+                                    Bottom line is:
+                                    The higher the temperature, the larger the diffusion coefficient, and the faster diffusion occurs.
+                                    That’s really the key takeaway you need to remember from this.
+                                    <p></p>
+                                    <a class="image left"><img src="images/DIFUSION4.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <br>
+                                    
+                                    <h5>Diffusion Mechanisms</h5>
+                                    The most common types of mechanisms are:
+                                    <li>Selfdiffusion</li> 
+                                    <li>Interdiffusion(other atoms)</li>
+                                    <li>Interstitial diffusion(between atoms)</li>
+                                    <li>Ring Mechanisms and Exchange of atoms</li>
+                                    <br>
+                                    <br>
+                                    <a class="image right"><img src="images/difusion8.png" alt="the 915 Porsche Transmission, Trym Kongrød" /></a>
+                                    <br>
+                                    <br>
+                                    For the atom to move into the vacancy, it must overcome an energy barrier.
+                                    <br>
+                                    It needs to be supplied with a certain amount of energy in order to move from one site to the other.
+                                    This is what we refer to as the activation energy.
+                                    <br>
+                                    In other words:
+                                    <br>
+                                    How much thermal energy must we supply to the system for the atom to successfully move from its original position to the vacancy?
+                                    <p></p>
+                                    <br>
+                                    The location where diffusion occurs also affects how fast it happens.
+                                    <br>
+                                    <li>Lattice diffusion occurs within the crystals (the crystal lattice) and is the most common type of diffusion.</li>
+                                    <li>Grain boundary diffusion happens along the grain boundaries. This type of diffusion is typically about 1,000 times faster than lattice diffusion.</li>
+                                    <li>Surface diffusion takes place on the surface of the material. Because atoms are much less tightly bound at the surface than inside the metal, diffusion can occur up to 1,000 times faster than grain boundary diffusion. Surface diffusion becomes relevant even at lower temperatures.</li>
+                                    <p></p>
+                                    At high temperatures, however, lattice diffusion becomes the most important of these types, because in a metal, most atoms are located inside the grains — that’s where the majority of the material's volume lies.
+
+
+								</p>
+                                   
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Norway<br />
+								The mountains</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">tkongrod@hotmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Trym Kongrød</li><li></a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
