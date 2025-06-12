@@ -3674,7 +3674,7 @@ input, select, textarea {
 		white-space: nowrap; /* Prevents text wrapping */
 		scrollbar-width: none; /* Hides scrollbar for Firefox */
 		-ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(62, 62, 62, 0.979);
 		height: 4rem;
 		line-height: 4rem;
 		padding: 0 1rem;
@@ -3739,7 +3739,7 @@ input, select, textarea {
 
 		#nav a {
 			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom-color: rgba(255, 255, 255, 0.961);
 		}
 
 			#nav a:hover {
@@ -3808,7 +3808,7 @@ input, select, textarea {
 
 					#nav ul.links li a:hover {
 						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
+						background-color: rgba(237, 237, 237, 0.934);
 					}
 
 				#nav ul.links li.active {
@@ -3816,11 +3816,11 @@ input, select, textarea {
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #82868b;
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							color: #759199 !important;
 						}
 
 		#nav ul.icons {
@@ -4595,7 +4595,7 @@ input, select, textarea {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		background-color: #111 !important; /* Force dark background */
+		background-color: #f0f0f0 !important; /* Force dark background */
 		color: white !important;
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -4627,8 +4627,8 @@ input, select, textarea {
 
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.875);
-			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			box-shadow: 0 0.125rem 0.75rem 0 rgba(135, 140, 146, 0.541);
+			color: #9c9c9c;
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4639,7 +4639,7 @@ input, select, textarea {
 
 			#navPanelToggle {
 				display: block;
-				background-color: #111 !important; /* Force dark background */
+				background-color: #e8e8e8 !important; /* Force dark background */
 				color: white !important;
 			}
 
@@ -4668,10 +4668,10 @@ input, select, textarea {
 		display: none;
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
-		background-color: #111 !important; /* Force dark background */
+		background-color: #98b4a8 !important; /* Force dark background */
 		color: white !important;
 		box-shadow: none;
-		color: #212931;
+		color: #6c6c6c;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4715,7 +4715,7 @@ input, select, textarea {
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-tap-highlight-color: rgba(176, 176, 176, 0);
 			border: 0;
 			color: #909498;
 			cursor: pointer;
@@ -4750,7 +4750,7 @@ input, select, textarea {
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				color: #c0c0c0;
 			}
 
 			@media screen and (max-width: 736px) {
