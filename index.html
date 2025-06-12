@@ -85,7 +85,7 @@
 					<div id="main">
 						<!-- Featured Post -->
 						<article class="post featured" style="
-						background-image: url('images/mini-mindre.JPG');
+						background-image: url('images/mini-mindre2.JPG');
 						background-size: cover;
 						background-position: center;
 						background-repeat: no-repeat;
@@ -107,18 +107,38 @@
 					</article>
 						<!-- Posts -->
 							<section class="posts">
-								<article>
-									<header>
+								<article style="position: relative; overflow: hidden; color: white; padding: 4rem 2rem; border-radius: 0.0rem; text-align: center;">
+									<!-- Background image with blur/darkening -->
+									<div style="
+									  position: absolute;
+									  top: 0; left: 0;
+									  width: 100%; height: 100%;
+									  background-image: url('images/mikroskop3.jpg');
+									  background-size: cover;
+									  background-position: center;
+									  background-repeat: no-repeat;
+									  filter: brightness(0.4) blur(1px);
+									  z-index: 0;
+									"></div>
+								  
+									<!-- Text/content on top -->
+									<div style="position: relative; z-index: 1;">
+									  <header>
 										<span class="date">Materials Engineering</span>
-										<h2><a href="materials.html">Behind every atom, is a purpose<br />
-										</a></h2>
-									</header>
-									<a href="materials.html" class="image fit"><img src="images/lithium-2784853-1920.png" alt="Porsche 911 915 Transmission, Trym Kongrød" style="width: 40%; max-width: 400px; height: auto; display: block; margin: 0 auto;"  /></a>
-									<p>The science behind the materials in your car. Read the Renngang articles on Materials Engineering.</p>
-									<ul class="actions special">
-										<li><a href="materials.html" class="button">Article Page</a></li>
-									</ul>
-								</article>
+										<h2><a href="materials.html" style="color: white; text-decoration: none;">Behind every atom, is a purpose</a></h2>
+									  </header>
+									  <p>
+										
+										<p>At Renngang, we believe true performance begins long before the first bolt is torqued. It starts with understanding the very atoms that form the heart of every component. That’s where materials engineering steps in, our quiet obsession.
+Using advanced techniques from non-destructive testing to CT scanning, spectroscopy, and 3D metallography, we evaluate everything from aluminium cylinder heads to forged Stahl gear clusters. Norwegian industry leads the world in smart material innovation, and we carry that tradition forward.</p>
+									  </p>
+									  Read the Renngang articles on Materials Engineering. <br>
+										<br><p></p>
+									  <ul class="actions special">
+										<li><a href="materials.html" class="button">Articles</a></li>
+									  </ul>
+									</div>
+								  </article>
 								<article style="position: relative; overflow: hidden; color: white; padding: 4rem 2rem; border-radius: 0.0rem; text-align: center;">
 									<!-- Background image with blur/darkening -->
 									<div style="
@@ -136,7 +156,7 @@
 									<!-- Text/content on top -->
 									<div style="position: relative; z-index: 1;">
 									  <header>
-										<span class="date">Zeiss Metrotome</span>
+										<span class="date">Perfection has no place to hide</span>
 										<h2><a href="ct.html" style="color: white; text-decoration: none;">Material Perfection</a></h2>
 									  </header>
 									  <p>
