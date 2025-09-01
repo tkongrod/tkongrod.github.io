@@ -2202,8 +2202,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #e9e9e9 !important;
+		box-shadow: inset 0 0 0 2px #3625d1;
+		color: #1f329c !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2211,8 +2211,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #c2c2c2;
-			color: #d8d8d8 !important;
+			box-shadow: inset 0 0 0 2px #4861d3;
+			color: #525ee0 !important;
 		}
 
 		input[type="submit"].primary,
@@ -2230,7 +2230,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #18bfef;
+				background-color: #035e77;
 			}
 
 /* Form */
@@ -3426,7 +3426,7 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
+				box-shadow: inset 0 0 0 2px #057492;
 				color: #18bfef !important;
 			}
 
@@ -3445,7 +3445,7 @@ input, select, textarea {
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
-					background-color: #18bfef;
+					background-color: #00627e;
 				}
 
 		#intro h1 {
@@ -3674,7 +3674,7 @@ input, select, textarea {
 		white-space: nowrap; /* Prevents text wrapping */
 		scrollbar-width: none; /* Hides scrollbar for Firefox */
 		-ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
-		background: rgba(62, 62, 62, 0.979);
+		background: rgba(0, 6, 54, 0.979);
 		height: 4rem;
 		line-height: 4rem;
 		padding: 0 1rem;
