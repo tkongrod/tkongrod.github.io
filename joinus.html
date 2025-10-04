@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renngang HR Prove Your Skill</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#d97706;--white:#eef2f7}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071025 0%, #07111a 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:48px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052023}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;margin-top:20px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h2{margin-top:0}
+    .rules{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    ul{color:var(--muted);line-height:1.6}
+    pre{background:#071028;padding:12px;border-radius:8px;overflow:auto;color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{background:var(--accent);padding:10px 14px;border-radius:8px;color:#07111a;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.rules{grid-template-columns:1fr;}.logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">RG</div>
+      <div>
+        <h1>Renngang — Prove Your Skill</h1>
+        <p class="lead">An ethical, role-aligned technical challenge that surfaces the candidates we want to train and hire.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Why a challenge?</h2>
+      <p class="small">We receive hundreds of applications from candidates with polished CVs. Therefore we removed our contact info. The challenge cuts through noise and shows who can apply knowledge under pressure. It also reflects our values: creativity, integrity, and operational rigor.</p>
+      <div style="margin-top:12px">
+        <h3>High-level overview</h3>
+        <ol style="color:var(--muted);line-height:1.7">
+          <li><strong>Apply</strong>: Submit your CV and details to receive access to the challenge link.</li>
+          <li><strong>Sandboxed challenge</strong>: Complete the task inside a secure, isolated environment or provided puzzle files. No live systems are targeted.</li>
+          <li><strong>Prove your process</strong>: Provide a clear write-up (and where relevant, reproducible scripts or a short walk-through video).</li>
+          <li><strong>Verification</strong>: Our team reviews submissions. Accepted candidates receive next steps and our HR contact via direct email.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card rules">
+      <div>
+        <h2>Rules & commitments (non-negotiable)</h2>
+        <ul>
+          <li><strong>Authorized scope only:</strong> Use only the provided sandbox. Attempts on production infrastructure will disqualify you and may be reported.</li>
+          <li><strong>Responsible disclosure:</strong> If you find an unintended issue in the challenge, report it through the disclosure channel immediately.</li>
+          <li><strong>Honesty:</strong> Submissions must be your own work; collaboration/cross-entry rules will be explicit per challenge.</li>
+          <li><strong>Privacy:</strong> Data in the sandbox is mock/test data — do not attempt to extract or reuse it beyond the exercise.</li>
+        </ul>
+
+        <h3 style="margin-top:10px">What we evaluate</h3>
+        <ul>
+          <li>Problem decomposition and planning.</li>
+          <li>Choice of tools and justification.</li>
+          <li>Clear, reproducible write-ups or walk-through recordings.</li>
+          <li>Secure-minded thinking and recommended mitigations.</li>
+          <li>Clean, well-documented code when applicable.</li>
+        </ul>
+
+        <div class="cta">
+          <a class="btn" href="#apply">Apply & Get Challenge</a>
+          <a class="btn secondary" href="#faq">Read FAQ</a>
+        </div>
+      </div>
+
+      <aside class="card" style="background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));">
+        <h3>Verification & HR contact</h3>
+        <p class="small">To avoid social engineering and spam, HR contact is only sent after successful verification. Submissions must include timestamped documentation or a short video showing your methods. If accepted, our HR team will email you with bespoke next steps.</p>
+
+        <h4 style="margin-top:12px">Responsible disclosure</h4>
+        <pre>// If you find a vulnerability in the challenge environment:
+1) Stop immediately.
+2) Do not exploit the issue to gain advantage.
+3) Send a message to: in-challenge report form.
+4) Include a short summary, timestamps, and reproduction steps.</pre>
+      </aside>
+    </section>
+
+    <section class="card" id="faq">
+      <h2>FAQ</h2>
+      <dl style="color:var(--muted);line-height:1.7">
+        <dt><strong>Can I attempt to break other Renngang systems?</strong></dt>
+        <dd>No. Only interact with the provided sandbox. Unauthorized activity will lead to disqualification and possible legal action.</dd>
+
+        <dt><strong>What if I find a vulnerability in the sandbox?</strong></dt>
+        <dd>Report immediately through the responsible disclosure channel. Don’t exploit it.</dd>
+
+        <dt><strong>How long is the challenge valid?</strong></dt>
+        <dd>Each challenge window is time-boxed and will be stated up-front on the application page.</dd>
+      </dl>
+    </section>
+
+    <section class="card" id="apply">
+      <h2>Apply</h2>
+      <p class="small">Ready to prove your skill? Use the form below to submit a CV and basic details. Successful submissions to the challenge that meet our criteria will be contacted directly by HR.</p>
+
+      <form style="display:grid;gap:10px;margin-top:12px">
+        <input type="text" name="name" placeholder="Full name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)">
+        <input type="email" name="email" placeholder="Email address" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)">
+        <input type="url" name="cv" placeholder="Link to CV (optional)" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)">
+        <textarea name="bio" rows="4" placeholder="Short note: role you're applying for / key skills" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)"></textarea>
+        <div style="display:flex;gap:8px;align-items:center">
+          <label class="small"><input type="checkbox" required> I agree to the challenge rules and that the sandbox is the only authorized scope.</label>
+        </div>
+        <div style="display:flex;gap:10px">
+          <button class="btn" type="submit">Submit & Request Challenge</button>
+          <a class="btn secondary" href="#rules">View Full Rules</a>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright: Renngang Engineering.</p>
+    </footer>
+  </div>
+</body>
+</html>

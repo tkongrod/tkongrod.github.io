@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RENNGANG — CT Scan Showcase</title>
+  <link rel="icon" type="image/x-icon" href="images/rgfavv.PNG">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#d97706;--accent2:#f59e0b;--white:#eef2f7}
+    html,body{background:linear-gradient(180deg,#071025 0%,#07111a 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+    a{color:#fbbf24}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(2,6,23,.6)}
+
+    header.site{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+    .logo{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;color:#052023}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .nav{position:sticky;top:0;z-index:1000;backdrop-filter:saturate(140%) blur(8px);background:rgba(15,16,24,.55);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{max-width:1100px;margin:0 auto;padding:.6rem 1rem;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.75rem}
+    .brand{font-weight:800;text-decoration:none;color:#eaf2ff}
+    .links{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;flex-wrap:wrap}
+    .links a{position:relative;display:inline-block;padding:.5rem .75rem;text-decoration:none;color:#cdd7e5;border-radius:10px;transition:color .2s ease,background .2s ease}
+    .links a::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:.35rem;height:2px;border-radius:2px;background:linear-gradient(90deg,#f59e0b,#fbbf24);transform:scaleX(0);transform-origin:left;transition:transform .22s ease;opacity:.9}
+    .links a:hover::after,.links a:focus-visible::after{transform:scaleX(1)}
+    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0c12;text-decoration:none;font-weight:700;padding:.55rem 1rem;border-radius:999px;box-shadow:0 8px 22px rgba(245,158,11,.25)}
+
+    .video-resp{position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden}
+    .video-resp iframe{position:absolute;inset:0;width:100%;height:100%}
+
+    .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    figure.video{margin:0;border-radius:10px;overflow:hidden;position:relative;background:#0b1220}
+    figure.video video{width:100%;height:180px;object-fit:cover;display:block;pointer-events:none}
+    figure.video figcaption{font-size:.85rem;color:var(--muted);padding:4px 0;text-align:center}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body class="is-preload">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">RENNGANG</a>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
+      <a class="cta" href="notify.html">Start your Journey</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="site">
+      <div class="logo">RG</div>
+      <div>
+        <h1>Join the Movement</h1>
+        <p class="lead">Knowledge spanning cutting‑edge technologies</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>The Renngang Team</h2>
+      <p class="muted">At Renngang Engineering, we’ve spent years operating at the frontlines of innovation where advanced engineering, AI, and robotics converge. Our roots run deep in the world of elite problemsolving, forged by professionals from special forces engineering, mechanical and software systems, and autonomous robotics.
+
+</p>
+      <div class="video-resp">
+        <iframe src="https://www.youtube.com/embed/u0PkSEscWfw?autoplay=1&mute=1&playsinline=1" title="CT scanning classic Porsche 911 transmission housing" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>From the beginning, our mission has been simple: to engineer the impossible and teach others to do the same. What sets us apart isn’t just our technical range, it’s the mindset that drives us. We think like operators, build like engineers, and execute with absolute precision.
+<p></p>
+Our team includes former special operations engineers. We’ve designed battlefield-ready systems, high-performance manufacturing platforms, and autonomous technologies that push the limits of what machines and humans can do together.
+<p></p>
+With our new platform finished we will redefine how technical mastery is taught. </p>
+    </section>
+
+    <section id="videos" class="card" style="margin-top:16px">
+      <h2>Case Videos</h2>
+      <p>We combine the rigor of elite engineering programs without the gatekeeping, bureaucracy, or crushing tuition costs.
+
+Our programs are built for  those who demand more than theory and want to create real impact. <p></p>Whether you’re pivoting into robotics and AI, leveling up your engineering skills, or pursuing knowledge traditional education never made accessible, we provide a clear, high-performance path forward.
+<p></p>
+Renngang Engineering isn’t just an academy it’s a movement. Where knowledge is accessible and fun using cutting edge VR and Gaming technologies.
+We are engineering the next generation of creators that are on a relentless pursuit for excellence.
+
+We are Built by Operators. Designed for Engineers. Open to Anyone.</p>
+      <div class="videos">
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/c++%20b%C3%B8lger.mp4" type="video/mp4"></video><figcaption>CFD Northern Sea Visualization</figcaption></figure>
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/b%C3%A5t%20i%20b%C3%B8lger.mp4" type="video/mp4"></video><figcaption>Maritime Operations Case</figcaption></figure>
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/helikopter%20flyr.mp4" type="video/mp4"></video><figcaption>GIS and Heli Operations Case</figcaption></figure>
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/neighbourhood1.mp4" type="video/mp4"></video><figcaption>Geo‑Specific Norwegian Customer</figcaption></figure>
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/str%C3%B8mm.mp4" type="video/mp4"></video><figcaption>River Visualization for Architect Firm</figcaption></figure>
+        <figure class="video"><video autoplay muted loop playsinline><source src="video/tree.mp4" type="video/mp4"></video><figcaption>Photogrammetry — Gaming Industry</figcaption></figure>
+      </div>
+    </section>
+
+    <footer>
+      <strong>Base Location</strong>
+      <div>Norway — The mountains</div>
+      
+    </footer>
+  </div>
+</body>
+</html>

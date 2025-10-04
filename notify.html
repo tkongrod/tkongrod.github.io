@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Renngang — Upcoming Courses (Dec 2025)</title>
+  <style>
+    :root{--bg:#0f1724;--muted:#9aa4b2;--accent:#d97706;--white:#eef2f7}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071025 0%, #07111a 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:48px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052023}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:8px}
+    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;margin-top:20px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .chip{display:inline-flex;align-items:center;gap:6px;border:1px solid rgba(255,255,255,0.1);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:12px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:var(--accent);padding:10px 14px;border-radius:8px;color:#07111a;text-decoration:none;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:16px}
+    .course{background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.05);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px}
+    .course .badge{font-size:12px;color:#07111a;background:var(--accent);padding:4px 8px;border-radius:6px;display:inline-block}
+    .course h3{margin:6px 0 0 0;font-size:18px}
+    .course p{color:var(--muted);margin:0}
+    .meta{display:flex;gap:10px;flex-wrap:wrap}
+    .meta .chip{border-color:rgba(255,255,255,0.08)}
+    .foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px}
+    .status{font-size:12px;color:var(--muted)}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+    input[type="search"], select, input[type="email"]{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:var(--white)}
+    .accordion{border-top:1px solid rgba(255,255,255,0.06);margin-top:12px}
+    .ac-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+    .ac-button{width:100%;text-align:left;padding:14px 0;background:none;border:none;color:var(--white);font-weight:600;cursor:pointer}
+    .ac-panel{display:none;padding:0 0 14px 0;color:var(--muted)}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    @media (max-width:980px){.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:680px){.grid{grid-template-columns:1fr}.logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html">
+  <div class="logo">RG</div>
+</a>
+      <div>
+        <h1>Renngang — Upcoming Courses</h1>
+        <p class="lead">Releasing December 2025. Forged in the field, perfected online. Join the waitlist and get early access.</p>
+        <div class="cta" style="margin-top:10px">
+          <a class="btn" href="#courses">Browse Courses</a>
+          <a class="btn secondary" href="#notify">Get Release Alerts</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="card" id="controls">
+      <h2 style="margin:0 0 8px 0">Find your track</h2>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search titles, skills, tools…" aria-label="Search courses">
+        <select id="level" aria-label="Filter by level">
+          <option value="">All levels</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+        <select id="domain" aria-label="Filter by domain">
+          <option value="">All domains</option>
+          <option>Cybersecurity</option>
+          <option>DevSecOps</option>
+          <option>Cloud</option>
+          <option>Reverse Engineering</option>
+          <option>Leadership</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="card" id="courses">
+      <h2 style="margin-top:0">What’s coming in December 2025</h2>
+      <div class="grid" id="courseGrid">
+        <!-- Duplicate and tweak each .course card per course -->
+        <article class="course" data-domain="Cybersecurity" data-level="Advanced">
+          <span class="badge">Dec 2025</span>
+          <h3>Mechanical Engineers Mindset: Thermodynamics</h3>
+          <p class="muted">Application of thermodynamics in renewable energy, system evaluation, and integration with energy-related engineering fields.</p>
+          <div class="chips">
+            <span class="chip">Core Laws</span>
+            <span class="chip">Analyze Energy-Mass Balances </span>
+            <span class="chip">System Evaluation</span>
+          </div>
+          <div class="foot">
+            <a class="btn primary" href="notify.html">Join Waitlist</a>
+            <span class="muted">Intermediate · Mechanical Engineering</span>
+          </div>
+        </article>
+<article class="course" data-domain="Mechanical Engineering" data-level="Advanced">
+  <span class="badge">Dec 2025</span>
+  <h3>Mechanical Engineers Mindset: Mechanics & Statics</h3>
+  <p class="muted">Fundamentals of forces, moments, and equilibrium in engineering systems with applications in structural and mechanical design.</p>
+  <div class="chips">
+    <span class="chip">Force Analysis</span>
+    <span class="chip">Equilibrium Conditions</span>
+    <span class="chip">Structural Stability</span>
+  </div>
+  <div class="foot">
+    <a class="btn primary" href="notify.html">Join Waitlist</a>
+    <span class="muted">Intermediate · Mechanical Engineering</span>
+  </div>
+</article>
+<article class="course" data-domain="Physics" data-level="Advanced">
+  <span class="badge">Dec 2025</span>
+  <h3>Physicist’s Mindset: Foundations of Motion and Matter</h3>
+  <p class="muted">Exploration of classical and modern physics principles governing motion, forces, energy, and the behavior of matter in diverse systems.</p>
+  <div class="chips">
+    <span class="chip">Newtonian Mechanics</span>
+    <span class="chip">Energy & Momentum</span>
+    <span class="chip">Wave Phenomena</span>
+  </div>
+  <div class="foot">
+    <a class="btn primary" href="notify.html">Join Waitlist</a>
+    <span class="muted">Intermediate · Physics</span>
+  </div>
+</article>
+<article class="course" data-domain="Mechanical Engineering" data-level="Advanced">
+  <span class="badge">Dec 2025</span>
+  <h3>Mechanical Engineers Mindset: Machine Design</h3>
+  <p class="muted">Principles of designing mechanical components and systems, focusing on strength, functionality, safety, and manufacturability in engineering design.</p>
+  <div class="chips">
+    <span class="chip">Design for Strength</span>
+    <span class="chip">Failure Analysis</span>
+    <span class="chip">Component Optimization</span>
+  </div>
+  <div class="foot">
+    <a class="btn primary" href="notify.html">Join Waitlist</a>
+    <span class="muted">Intermediate · Machine Design</span>
+  </div>
+</article>
+<article class="course" data-domain="Robotics & AI" data-level="Advanced">
+  <span class="badge">Dec 2025</span>
+  <h3>Engineer’s Mindset: Artificial Intelligence in Robotics</h3>
+  <p class="muted">Integration of AI and machine learning techniques in robotic systems for perception, decision-making, and autonomous control applications.</p>
+  <div class="chips">
+    <span class="chip">Machine Learning</span>
+    <span class="chip">Autonomous Control</span>
+    <span class="chip">Computer Vision</span>
+  </div>
+  <div class="foot">
+    <a class="btn primary" href="notify.html">Join Waitlist</a>
+    <span class="muted">Advanced · Robotics & Artificial Intelligence</span>
+  </div>
+</article>
+
+
+      </div>
+
+      <div class="accordion" id="syllabus">
+        <div class="ac-item">
+          <button class="ac-button" aria-expanded="false">What to expect in December 2025</button>
+          <div class="ac-panel">
+            <p>All courses launch with guided labs, operator-style briefs, and graded write-ups. Cohorts are capped for high-touch feedback. Exact dates will be announced to waitlisted learners first.</p>
+          </div>
+        </div>
+        <div class="ac-item">
+          <button class="ac-button" aria-expanded="false">Certification & proof of completion</button>
+          <div class="ac-panel">
+            <p>Passing learners receive a verifiable digital certificate and a Renngang write-up rubric score — built to showcase practical skill to employers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="notify">
+      <h2 style="margin-top:0">Get release alerts</h2>
+      <p class="lead" style="margin:0 0 10px 0">Join the waitlist to be notified the moment courses go live in <strong>December 2025</strong>.</p>
+      <form id="waitlist" style="display:grid;gap:10px;max-width:560px">
+        <input type="email" placeholder="Your email" required>
+        <input type="text" placeholder="Name (optional)">
+        <input type="text" id="interest" placeholder="Course of interest (optional)">
+        <div class="cta">
+          <button class="btn" type="submit">Notify Me</button>
+          <a class="btn secondary" href="#courses">Back to Courses</a>
+        </div>
+        <p class="status" id="wlStatus" role="status" aria-live="polite" style="display:none"></p>
+      </form>
+      <p class="small">We respect your privacy. No spam — just launch details, limited seats, and early-bird bonuses.</p>
+    </section>
+
+    <footer>
+      <p>Copyright: Renngang Engineering</p>
+    </footer>
+  </div>
+
+  <script>
+    // Simple filter/search logic
+    const search = document.getElementById('search');
+    const level = document.getElementById('level');
+    const domain = document.getElementById('domain');
+    const grid = document.getElementById('courseGrid');
+
+    function applyFilters(){
+      const q = (search.value || '').toLowerCase();
+      const lv = level.value;
+      const dm = domain.value;
+      const cards = grid.querySelectorAll('.course');
+      cards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const desc = card.querySelector('p').textContent.toLowerCase();
+        const cardLv = card.getAttribute('data-level');
+        const cardDm = card.getAttribute('data-domain');
+        const matchesText = !q || title.includes(q) || desc.includes(q);
+        const matchesLv = !lv || lv === cardLv;
+        const matchesDm = !dm || dm === cardDm;
+        card.style.display = (matchesText && matchesLv && matchesDm) ? 'flex' : 'none';
+      });
+    }
+    [search, level, domain].forEach(el => el.addEventListener('input', applyFilters));
+
+    // Tiny accordion
+    document.querySelectorAll('.ac-button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panel = btn.nextElementSibling;
+        const open = panel.style.display === 'block';
+        panel.style.display = open ? 'none' : 'block';
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    });
+
+    // Waitlist stub (replace with real handler)
+    document.getElementById('waitlist').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById('wlStatus');
+      status.style.display = 'block';
+      status.textContent = 'Thanks — you\'re on the list for December 2025. We\'ll be in touch.';
+      e.target.reset();
+    });
+
+    // Prefill from clicked course
+    document.querySelectorAll('a[data-course]').forEach(link => {
+      link.addEventListener('click', () => {
+        const course = link.getAttribute('data-course');
+        const i
