@@ -9,35 +9,227 @@
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#d97706;--accent2:#f59e0b;--white:#eef2f7}
-    html,body{background:linear-gradient(180deg,#071025 0%,#07111a 100%);color:var(--white);-webkit-font-smoothing:antialiased}
-    a{color:#fbbf24}
-    .container{max-width:1100px;margin:40px auto;padding:24px}
-    .card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(2,6,23,.6)}
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#d97706;
+      --accent2:#f59e0b;
+      --white:#eef2f7;
+    }
 
-    header.site{display:flex;align-items:center;gap:14px;margin-bottom:10px}
-    .logo{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,#0ea5a4,#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;color:#052023}
-    h1{margin:0;font-size:28px}
-    p.lead{color:var(--muted);margin:6px 0 0}
+    html,body{
+      margin:0;
+      background:linear-gradient(180deg,#071025 0%,#07111a 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
 
-    .nav{position:sticky;top:0;z-index:1000;backdrop-filter:saturate(140%) blur(8px);background:rgba(15,16,24,.55);border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav-inner{max-width:1100px;margin:0 auto;padding:.6rem 1rem;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.75rem}
-    .brand{font-weight:800;text-decoration:none;color:#eaf2ff}
-    .links{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;flex-wrap:wrap}
-    .links a{position:relative;display:inline-block;padding:.5rem .75rem;text-decoration:none;color:#cdd7e5;border-radius:10px;transition:color .2s ease,background .2s ease}
-    .links a::after{content:"";position:absolute;left:.75rem;right:.75rem;bottom:.35rem;height:2px;border-radius:2px;background:linear-gradient(90deg,#f59e0b,#fbbf24);transform:scaleX(0);transform-origin:left;transition:transform .22s ease;opacity:.9}
-    .links a:hover::after,.links a:focus-visible::after{transform:scaleX(1)}
-    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0c12;text-decoration:none;font-weight:700;padding:.55rem 1rem;border-radius:999px;box-shadow:0 8px 22px rgba(245,158,11,.25)}
+    a{color:#fbbf24;text-decoration:none}
+    a:hover{text-decoration:underline}
 
-    .video-resp{position:relative;padding-bottom:56.25%;height:0;border-radius:12px;overflow:hidden}
-    .video-resp iframe{position:absolute;inset:0;width:100%;height:100%}
+    .container{
+      max-width:1100px;
+      margin:40px auto;
+      padding:24px;
+    }
 
-    .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-    figure.video{margin:0;border-radius:10px;overflow:hidden;position:relative;background:#0b1220}
-    figure.video video{width:100%;height:180px;object-fit:cover;display:block;pointer-events:none}
-    figure.video figcaption{font-size:.85rem;color:var(--muted);padding:4px 0;text-align:center}
+    .card{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:20px;
+      box-shadow:0 6px 20px rgba(2,6,23,.6);
+      margin-top:20px;
+    }
 
-    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    header.site{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      margin-bottom:10px;
+    }
+
+    .logo{
+      width:60px;
+      height:60px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#0ea5a4,#06b6d4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      color:#052023;
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+    }
+
+    h2{
+      margin:0 0 8px 0;
+      font-size:22px;
+    }
+
+    p.lead{
+      color:var(--muted);
+      margin:6px 0 0;
+      max-width:520px;
+    }
+
+    .muted{
+      color:var(--muted);
+    }
+
+    /* Nav – match the clean, minimal course aesthetic */
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:saturate(140%) blur(8px);
+      background:rgba(7,10,20,.8);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav-inner{
+      max-width:1100px;
+      margin:0 auto;
+      padding:.6rem 1rem;
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      align-items:center;
+      gap:.75rem;
+    }
+    .brand{
+      font-weight:800;
+      text-decoration:none;
+      color:#eaf2ff;
+      letter-spacing:.04em;
+      font-size:15px;
+    }
+    .links{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:flex;
+      gap:.5rem;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .links a{
+      position:relative;
+      display:inline-block;
+      padding:.5rem .75rem;
+      text-decoration:none;
+      color:#cdd7e5;
+      border-radius:10px;
+      font-size:14px;
+      transition:color .2s ease,background .2s ease;
+    }
+    .links a::after{
+      content:"";
+      position:absolute;
+      left:.75rem;
+      right:.75rem;
+      bottom:.35rem;
+      height:2px;
+      border-radius:2px;
+      background:linear-gradient(90deg,#f59e0b,#fbbf24);
+      transform:scaleX(0);
+      transform-origin:left;
+      transition:transform .22s ease;
+      opacity:.9;
+    }
+    .links a:hover::after,
+    .links a:focus-visible::after{
+      transform:scaleX(1);
+    }
+
+    .cta{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#0b0c12;
+      text-decoration:none;
+      font-weight:700;
+      padding:.55rem 1rem;
+      border-radius:999px;
+      box-shadow:0 8px 22px rgba(245,158,11,.25);
+      font-size:14px;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .cta:hover{filter:brightness(1.05);text-decoration:none}
+
+    /* Responsive video (YouTube) */
+    .video-resp{
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+      border-radius:12px;
+      overflow:hidden;
+      margin-top:12px;
+      margin-bottom:12px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+    .video-resp iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+    }
+
+    /* Case videos grid */
+    .videos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+    figure.video{
+      margin:0;
+      border-radius:10px;
+      overflow:hidden;
+      position:relative;
+      background:#0b1220;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+    figure.video video{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      display:block;
+      pointer-events:none;
+    }
+    figure.video figcaption{
+      font-size:.85rem;
+      color:var(--muted);
+      padding:6px 8px 8px;
+      text-align:left;
+    }
+
+    footer{
+      margin-top:28px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+
+    @media (max-width:720px){
+      header.site{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .nav-inner{
+        grid-template-columns:1fr;
+        justify-items:flex-start;
+      }
+      .links{
+        justify-content:flex-start;
+      }
+    }
   </style>
 </head>
 <body class="is-preload">
@@ -49,7 +241,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#videos">Videos</a></li>
       </ul>
-      <a class="cta" href="notify.html">Start your Journey</a>
+      <a class="cta" href="notify.html">Start your journey</a>
     </div>
   </nav>
 
@@ -58,43 +250,98 @@
       <div class="logo">RG</div>
       <div>
         <h1>Join the Movement</h1>
-        <p class="lead">Knowledge spanning cutting‑edge technologies</p>
       </div>
     </header>
 
-    <section class="card">
+    <!-- ABOUT / TEAM -->
+    <section class="card" id="about">
       <h2>The Renngang Team</h2>
-      <p class="muted">Renngang Engineering is forged by professionals from special forces engineering, mechanical and software systems, and autonomous robotics.
+      <p class="muted">
+                Renngang is an engineering education initiative based in Norway. We create clear, exam focused
+        courses for engineering students who want to truly understand the fundamentals, not just memorize formulas.
+        
+      </p>
 
-</p>
       <div class="video-resp">
-        <iframe src="https://www.youtube.com/embed/u0PkSEscWfw?autoplay=1&mute=1&playsinline=1" title="CT scanning classic Porsche 911 transmission housing" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/u0PkSEscWfw?autoplay=1&mute=1&playsinline=1"
+          title="CT scanning classic Porsche 911 transmission housing"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
-      <p>From the beginning, our mission has been simple: to engineer the impossible and teach others to do the same.
-We want to redefine how technical mastery is taught. </p>
+
+      <p class="muted">
+Renngang Engineering is forged by professionals from mechanical and software systems,
+        autonomous robotics, and special aviation forces engineering.
+      </p>
+      <p class="muted">
+        Our instructors have backgrounds in mechanical and robotics engineering, with real world industry
+        experience in energy, robotics, and advanced systems.
+      </p>
+      <p class="muted">
+        From the beginning, our mission has been simple: to engineer the impossible and teach others to do the same.
+        We want to redefine how technical mastery is taught.
+      </p>
     </section>
 
-    <section id="videos" class="card" style="margin-top:16px">
+    <!-- CASE VIDEOS -->
+    <section id="videos" class="card">
       <h2>Case Videos</h2>
-      
-<p>
-Renngang Engineering is a place for all where knowledge is accessible and fun using modern technologies.
-We are teaching the next generation of creators that are on a relentless pursuit for innovation and knowledge.
-</p>
+      <p class="muted">
+        Renngang Engineering is a place where knowledge is accessible and engaging through modern technologies.
+        We teach the next generation of creators on a relentless pursuit of innovation and understanding.
+      </p>
+
       <div class="videos">
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/c++%20b%C3%B8lger.mp4" type="video/mp4"></video><figcaption>CFD Northern Sea Visualization</figcaption></figure>
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/b%C3%A5t%20i%20b%C3%B8lger.mp4" type="video/mp4"></video><figcaption>Maritime Operations Case</figcaption></figure>
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/helikopter%20flyr.mp4" type="video/mp4"></video><figcaption>GIS and Heli Operations Case</figcaption></figure>
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/neighbourhood1.mp4" type="video/mp4"></video><figcaption>Geo‑Specific Norwegian Customer</figcaption></figure>
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/str%C3%B8mm.mp4" type="video/mp4"></video><figcaption>River Visualization for Architect Firm</figcaption></figure>
-        <figure class="video"><video autoplay muted loop playsinline><source src="video/tree.mp4" type="video/mp4"></video><figcaption>Photogrammetry — Gaming Industry</figcaption></figure>
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/c++%20b%C3%B8lger.mp4" type="video/mp4">
+          </video>
+          <figcaption>CFD Northern Sea Visualization</figcaption>
+        </figure>
+
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/b%C3%A5t%20i%20b%C3%B8lger.mp4" type="video/mp4">
+          </video>
+          <figcaption>Maritime Operations Case</figcaption>
+        </figure>
+
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/helikopter%20flyr.mp4" type="video/mp4">
+          </video>
+          <figcaption>GIS and Heli Operations Case</figcaption>
+        </figure>
+
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/neighbourhood1.mp4" type="video/mp4">
+          </video>
+          <figcaption>Geo-Specific Norway</figcaption>
+        </figure>
+
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/str%C3%B8mm.mp4" type="video/mp4">
+          </video>
+          <figcaption>River Visualization </figcaption>
+        </figure>
+
+        <figure class="video">
+          <video autoplay muted loop playsinline>
+            <source src="video/tree.mp4" type="video/mp4">
+          </video>
+          <figcaption>Photogrammetry for Gaming Industry</figcaption>
+        </figure>
       </div>
     </section>
 
     <footer>
       <strong>Base Location</strong>
-      <div>Norway, Deep in The mountains</div>
-      
+      <div>Norway, deep in the mountains.</div>
     </footer>
   </div>
 </body>
